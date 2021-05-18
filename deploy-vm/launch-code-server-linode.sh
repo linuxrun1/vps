@@ -33,6 +33,7 @@ source /root/.bashrc
 mkdir -p /home/coder/.config/code-server
 touch /home/coder/.config/code-server/config.yaml
 echo "link: true" > /home/coder/.config/code-server/config.yaml
+echo "password: 123" >> /home/coder/.config/code-server/config.yaml
 chown -R coder:coder /home/coder/.config
 
 # start and enable code-server and our helper service
