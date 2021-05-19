@@ -78,5 +78,5 @@ fi
 
 echo "[$PREFIX] Starting code-server..."
 # Now we can run code-server with the default entrypoint
-#/usr/bin/entrypoint.sh --bind-addr 0.0.0.0:8080 $START_DIR
-PASSWORD=123 code-server --port 8080 --disable-telemetry
+PASSWORD=123 /usr/bin/entrypoint.sh --bind-addr 0.0.0.0:8080 $START_DIR
+#PASSWORD=123 code-server --port 8080 --disable-telemetry
