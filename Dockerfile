@@ -35,7 +35,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Port
 ENV PORT=22
 
-RUN bash setup.sh
+RUN sudo bash setup.sh
 # Use our custom entrypoint script first
 COPY deploy-container/entrypoint.sh /usr/bin/deploy-container-entrypoint.sh
 ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
