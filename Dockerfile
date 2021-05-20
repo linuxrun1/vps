@@ -1,3 +1,4 @@
+FROM codercom/code-server:3.9.3 
 
 USER coder
 
