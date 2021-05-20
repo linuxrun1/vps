@@ -1,6 +1,6 @@
 FROM codercom/code-server:3.9.3 
 
-USER coder
+USER root
 
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
